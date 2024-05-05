@@ -89,7 +89,7 @@ async def on_chat_start():
     
     
 @cl.on_message
-async def main(messgae: cl.Message):
+async def main(message: cl.Message):
     chain = cl.user_session.get("chain")
     cb = cl.AsyncLangchainCallbackHandler()
     
